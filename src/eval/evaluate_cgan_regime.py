@@ -1,7 +1,7 @@
 import os, json, yaml, argparse, math, numpy as np, pandas as pd, torch
 from torch.utils.data import DataLoader, TensorDataset
 
-# cGAN generator (same class you used for training)
+# cGAN generator 
 from src.models.cgan import GeneratorLSTMCond
 
 # -------------------- metrics --------------------
