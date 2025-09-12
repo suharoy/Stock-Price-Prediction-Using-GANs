@@ -1,0 +1,15 @@
+seed: 42
+data:
+  processed: data/processed       # where train/val/test.npz + meta.json live
+train:
+  epochs: 25
+  batch_size: 128
+  lr: 1e-3
+  weight_decay: 0.0
+  grad_clip: 1.0
+model:
+  hidden: 128
+  layers: 2
+  dropout: 0.2
+logging:
+  outdir: runs/lstm_msft

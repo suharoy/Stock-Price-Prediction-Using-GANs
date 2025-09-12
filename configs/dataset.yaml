@@ -1,0 +1,16 @@
+symbols: ["MSFT"]
+start: "2000-01-01"
+end: "2020-12-31"
+
+features: [high, low, open, close, volume, turnover, ma5]
+mar_window: 5
+
+window_T: 20
+horizon: 1
+
+splits: {train: 0.90, val: 0.05, test: 0.05}
+
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed

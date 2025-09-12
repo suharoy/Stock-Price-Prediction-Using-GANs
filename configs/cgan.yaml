@@ -1,0 +1,17 @@
+seed: 42
+data:
+  processed: data/processed   # npz + meta.json
+  interim: data/interim       # for dates (to build conditions) + denorm
+train:
+  epochs: 50
+  batch_size: 128
+  lr_g: 1e-4
+  lr_d: 1e-4
+  d_steps: 1
+  lambda_mse: 1.0
+  lambda_gan: 1.0
+  grad_clip: 1.0
+  cond_type: dow          # condition type: 'dow' (day-of-week)
+  cond_dim: 5             # Mon..Fri one-hot
+logging:
+  outdir: runs/cgan_msft

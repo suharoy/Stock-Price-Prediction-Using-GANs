@@ -1,0 +1,9 @@
+numpy
+pandas
+yfinance
+PyYAML
+scikit-learn
+tqdm
+torch
+torchvision
+torchaudio

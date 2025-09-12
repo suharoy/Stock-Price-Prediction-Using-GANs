@@ -1,0 +1,7 @@
+.venv/
+_pycache_/
+*.npz
+runs/
+data/raw/
+data/interim/
+data/processed/

@@ -1,0 +1,15 @@
+seed: 42
+data:
+  processed: data/processed         # where train/val/test.npz + meta.json live
+  interim: data/interim             # for denormalization during eval
+train:
+  epochs: 40
+  batch_size: 128
+  lr_g: 1e-4
+  lr_d: 1e-4
+  d_steps: 1            # discriminator steps per G step
+  lambda_mse: 1.0       # weight on close_z MSE in G loss
+  lambda_gan: 1.0       # weight on adversarial loss in G loss
+  grad_clip: 1.0
+logging:
+  outdir: runs/gan2019_msft
