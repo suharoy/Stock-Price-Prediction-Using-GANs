@@ -3,7 +3,7 @@ data:
   processed: data/processed         # where train/val/test.npz + meta.json live
   interim: data/interim             # for denormalization during eval
 train:
-  epochs: 40
+  epochs: 50
   batch_size: 128
   lr_g: 1e-4
   lr_d: 1e-4

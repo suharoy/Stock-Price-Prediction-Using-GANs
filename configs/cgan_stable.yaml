@@ -3,7 +3,7 @@ data:
   processed: data/processed
   interim: data/interim
 train:
-  epochs: 60
+  epochs: 50
   batch_size: 128
   lr_g: 1e-4
   lr_d: 1e-4

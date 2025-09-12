@@ -2,7 +2,7 @@ seed: 42
 data:
   processed: data/processed       # where train/val/test.npz + meta.json live
 train:
-  epochs: 25
+  epochs: 50
   batch_size: 128
   lr: 1e-3
   weight_decay: 0.0
