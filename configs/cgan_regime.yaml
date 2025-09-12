@@ -1,0 +1,14 @@
+seed: 42
+data: { processed: data/processed, interim: data/interim }
+train:
+  epochs: 60
+  batch_size: 128
+  lr_g: 1e-4
+  lr_d: 1e-4
+  d_steps: 2
+  lambda_mse: 2.0
+  lambda_gan: 0.5
+  grad_clip: 1.0
+  cond_type: regime3
+  cond_dim: 3
+logging: { outdir: runs/cgan_regime_msft }
