@@ -1,7 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
 .venv/
-_pycache_/
+venv/
+
+# Generated model/data artifacts
 *.npz
 runs/
+
+# Generated datasets
 data/raw/
 data/interim/
 data/processed/
+
+# Environment variables
+.env
+*.env
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
